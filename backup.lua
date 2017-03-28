@@ -209,7 +209,7 @@ local function on_exit()
     -- For more info look for "why do *not* process ls output" 
     local number_of_persisted_backups = dt.preferences.read("backup", "number_of_persisted_backups", "integer")
     if number_of_persisted_backups > 0 then
-      local rm_cmd = "ls -dt "..backup_dir.."/"..filename_prefix.."* | tail -n +"..(number_of_persisted_backups+1).." | xargs rm -- "
+      local rm_cmd = "ls -dt "..backup_dir.."/"..filename_prefix.."* | tail -n +"..(number_of_persisted_backups+1).." | xargs rm -r -- "
       dt.control.execute(rm_cmd)
     end
   end
