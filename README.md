@@ -1,4 +1,4 @@
-# [Dartable](darktable.org) plugin (lua script) for automatic backup on exit
+# [Darktable](darktable.org) plugin (lua script) for automatic backup on exit
 
 This plugin enable automatic backup procedure on Darktable exit. No additional software is required, however in this case backup will be raw copy of config directory. Plugin supports also compression, but some additional software may be required. Following backup modes are supported:
 
